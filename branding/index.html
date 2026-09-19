@@ -245,6 +245,31 @@ h2 em{font-style:normal;color:var(--gold)}
   line-height:1.65;font-weight:300;position:relative;z-index:1}
 .cta-btns{position:relative;z-index:1;display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:20px}
 .cta-alt{position:relative;z-index:1;font-size:12px;color:var(--grey)}
+
+/* GOOGLE BUSINESS PANORAMA */
+#gbp{background:var(--dark2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.gbp-card{display:grid;grid-template-columns:1.1fr 0.9fr;background:var(--dark3);
+  border:1px solid var(--border);border-radius:var(--r);overflow:hidden;margin-top:24px}
+@media(max-width:800px){.gbp-card{grid-template-columns:1fr}}
+.gbp-map{position:relative;min-height:340px;background:var(--dark)}
+.gbp-map iframe{width:100%;height:100%;min-height:340px;border:0;filter:grayscale(.15) contrast(1.05)}
+.gbp-info{padding:32px 30px;display:flex;flex-direction:column;justify-content:center}
+.gbp-brand{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.gbp-brand img{width:42px;height:42px;border-radius:8px;object-fit:cover;border:1px solid var(--border)}
+.gbp-brand-name{font-family:var(--h);font-size:17px;font-weight:800;letter-spacing:.5px}
+.gbp-brand-sub{font-size:11px;color:var(--grey);text-transform:uppercase;letter-spacing:1.5px;margin-top:2px}
+.gbp-stars{color:var(--gold);font-size:14px;letter-spacing:2px;margin-bottom:4px}
+.gbp-desc{font-size:13px;color:var(--grey2);line-height:1.7;margin-bottom:22px}
+.gbp-rows{display:flex;flex-direction:column;gap:10px;margin-bottom:24px}
+.gbp-row{display:flex;align-items:center;gap:12px;font-size:13px;color:var(--grey2)}
+.gbp-row i{width:18px;color:var(--gold);flex-shrink:0;font-size:13px}
+.gbp-btns{display:flex;gap:10px;flex-wrap:wrap}
+.btn-gbp{display:inline-flex;align-items:center;gap:8px;font-family:var(--h);font-size:12px;
+  font-weight:700;letter-spacing:.5px;padding:11px 18px;border-radius:var(--r);
+  border:1px solid var(--border);color:var(--white);transition:all .2s}
+.btn-gbp:hover{border-color:var(--gold);color:var(--gold)}
+.btn-gbp.primary{background:var(--gold);color:#0a0a0a;border-color:var(--gold)}
+.btn-gbp.primary:hover{background:var(--gold2);color:#0a0a0a}
 .cta-alt a{color:var(--gold);font-weight:500}
 
 footer{background:#050505;padding:24px;text-align:center;border-top:1px solid var(--border)}
@@ -515,6 +540,39 @@ footer a{color:var(--gold)}
     <div class="pq-item"><div class="pq-icon"><i class="fa-solid fa-sliders"></i></div><div class="pq-title">Personalización</div><div class="pq-desc">Cada proyecto se adapta a marca y objetivo.</div></div>
     <div class="pq-item"><div class="pq-icon"><i class="fa-solid fa-paintbrush"></i></div><div class="pq-title">Terminaciones profesionales</div><div class="pq-desc">Acabados listos para exhibición.</div></div>
     <div class="pq-item"><div class="pq-icon"><i class="fa-solid fa-hand-sparkles"></i></div><div class="pq-title">Tecnología + oficio</div><div class="pq-desc">Digital y manual combinados.</div></div>
+  </div>
+</section>
+
+<!-- GOOGLE BUSINESS PANORAMA -->
+<section id="gbp" class="fi" style="padding:56px 28px">
+  <div class="wrap" style="max-width:1160px;margin:0 auto;padding:0">
+    <div class="sec-eyebrow">Empresa verificada</div>
+    <h2 style="margin-bottom:0">Encontranos en <em style="font-style:normal;color:var(--gold)">Google</em></h2>
+    <div class="gbp-card">
+      <div class="gbp-map">
+        <iframe src="https://maps.google.com/maps?q=place_id:ChIJmb4-9MO3vJURw4UyoT3UmcA&z=15&output=embed" loading="lazy" allowfullscreen title="SOLV3D en Google Maps"></iframe>
+      </div>
+      <div class="gbp-info">
+        <div class="gbp-brand">
+          <img src="https://www.google.com/s2/favicons?domain=google.com&sz=64" alt="Google">
+          <div>
+            <div class="gbp-brand-name">SOLV3D Impresiones</div>
+            <div class="gbp-brand-sub">Perfil de Google Business</div>
+          </div>
+        </div>
+        <p class="gbp-desc">Somos una empresa real, con local en Buenos Aires y clientes que dejaron su reseña en Google. Mirá nuestra ubicación, contactanos directo o dejanos tu opinión.</p>
+        <div class="gbp-rows">
+          <div class="gbp-row"><i class="fa-solid fa-location-dot"></i> Buenos Aires, Argentina</div>
+          <div class="gbp-row"><i class="fa-solid fa-phone"></i> 011 3049-8153</div>
+          <div class="gbp-row"><i class="fa-solid fa-envelope"></i> solv3d.impresiones@gmail.com</div>
+        </div>
+        <div class="gbp-btns">
+          <a href="https://share.google/mGcIJy56piFG0igtD" target="_blank" class="btn-gbp primary"><i class="fa-brands fa-google"></i> Ver perfil y reseñas</a>
+          <a href="https://www.google.com/maps/dir/?api=1&destination=SOLV3D+Impresiones&destination_place_id=ChIJmb4-9MO3vJURw4UyoT3UmcA" target="_blank" class="btn-gbp"><i class="fa-solid fa-diamond-turn-right"></i> Cómo llegar</a>
+          <a href="tel:+5491130498153" class="btn-gbp"><i class="fa-solid fa-phone"></i> Llamar</a>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
